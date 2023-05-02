@@ -1,0 +1,34 @@
+---
+title: "esmdl"
+format: gfm
+engine: knitr
+---
+
+Download ESM and all ESM deps from CDN
+
+Ref: 
+
+- https://simonwillison.net/2023/May/2/download-esm/
+- https://github.com/simonw/download-esm
+
+## Usage
+
+```bash
+NAME:
+   download-esm - Download ESM modules from npm and jsdelivr
+
+USAGE:
+   download-esm [global options] command [command options] [arguments...]
+
+COMMANDS:
+   help, h  Shows a list of commands or help for one command
+
+GLOBAL OPTIONS:
+   --package value, -p value   Package to download
+   --location value, -l value  Location to save files (default: .)
+   --help, -h                  show help
+```
+
+```{bash}
+./esmdl --package "@observablehq/plot@latest" --location /tmp/mjs
+```
