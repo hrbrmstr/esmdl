@@ -6,14 +6,24 @@ engine: knitr
 
 Download ESM and all ESM deps from CDN
 
-Ref: 
+Golang version of the spiffy: 
 
 - https://simonwillison.net/2023/May/2/download-esm/
 - https://github.com/simonw/download-esm
 
+b/c only monsters use Python.
+
+## Install
+
+```{bash install, eval=FALSE}
+go install github.com/hrbrmstr/esmdl@latest
+```
+
+or grab a binary from the releases.
+
 ## Usage
 
-```bash
+```{bash usage, eval=FALSE}
 NAME:
    download-esm - Download ESM modules from npm and jsdelivr
 
@@ -29,6 +39,6 @@ GLOBAL OPTIONS:
    --help, -h                  show help
 ```
 
-```{bash}
+```{bash run, eval=TRUE}
 ./esmdl --package "@observablehq/plot@latest" --location /tmp/mjs
 ```
